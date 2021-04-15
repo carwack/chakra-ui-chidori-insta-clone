@@ -668,6 +668,11 @@ estree-walker@^2.0.1:
   resolved "https://registry.yarnpkg.com/estree-walker/-/estree-walker-2.0.2.tgz#52f010178c2a4c117a7757cfe942adb7d2da4cac"
   integrity sha512-Rfkk/Mp/DL7JVje3u18FxFujQlTNR2q6QfMSMB7AvCBx91NGj/ba3kCfza0f6dVDbw7YlRf/nDrn7pQrCCyQ/w==
 
+feather-icons-paths@^1.0.8:
+  version "1.0.8"
+  resolved "https://registry.yarnpkg.com/feather-icons-paths/-/feather-icons-paths-1.0.8.tgz#5cd68b6a1eb22b1ec08a8b2eaaf05a345cb216e4"
+  integrity sha512-B07o6Vtx3ATZDbsdx6jyYEXEmsn7Rwl0tT80657DL3kHf9Fo4Jncun3nxjZjNHbhKmd44wFXH269kU893E1DhQ==
+
 find-root@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/find-root/-/find-root-1.1.0.tgz#abcfc8ba76f708c42a97b3d685b7e9450bfb9ce4"

@@ -1,22 +1,19 @@
 <template>
-  <chakra.h1 color="red.500">Hello Chakra</chakra.h1>
+  <c-reset />
+  <!-- navbar -->
+  <INavbar />
+  <!-- feed -->
+  <!-- sidebar -->
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue'
+import INavbar from './components/INavbar.vue'
 
 export default defineComponent({
   name: 'App',
+  components: {
+    INavbar
+  }
 })
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
