@@ -1,7 +1,6 @@
 <template>
   <c-box font-family="body" bg="gray.50" min-h="100vh" pb="32">
     <c-reset />
-    <!-- navbar -->
     <INavbar />
     <c-flex
       as="main"
@@ -18,7 +17,6 @@
         w="full"
         :mr="[0, 0, 6]"
       >
-        <!-- align="stretch" Items are stretched to fit the container -->
         <IPost
           v-for="(post, i) in posts"
           :key="i"

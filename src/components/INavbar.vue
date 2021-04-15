@@ -30,10 +30,3 @@
     </c-flex>
   </c-flex>
 </template>
-
-<script lang="ts">
-
-export default {
-  name: "INavbar"
-}
-</script>

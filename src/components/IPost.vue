@@ -11,40 +11,40 @@
       <chakra.img :src="avatar" h="3em" :alt="username" rounded="full" mr="4" />
       <!-- text -->
       <c-flex flex-direction="column" flex="1">
-        <chakra.p font-weight="bold" font-size="sm">{{ username }}</chakra.p>
-        <chakra.p font-size="sm" opacity="0.7">{{ location }}</chakra.p>
+        <c-text font-weight="bold" font-size="sm">{{ username }}</c-text>
+        <c-text font-size="sm" opacity="0.7">{{ location }}</c-text>
       </c-flex>
     </c-flex>
-    <chakra.img 
-      :src="image"
-      :alt="caption"
-      object-fit="cover"
-      h="2xl"
-      w="2xl"
-    />
+    <c-aspect-ratio max-w="2xl" :ratio="1 / 1">
+      <chakra.img 
+        :src="image"
+        :alt="caption"
+        object-fit="cover"
+      />
+    </c-aspect-ratio>
     <c-flex p="4">
       <c-flex>
-        <c-icon size="6" name="heart" />
-        <c-icon size="6" name="message-circle" />
+        <c-icon size="6" name="heart" mr="3" />
+        <c-icon size="6" name="message-circle" mr="3" />
         <c-icon size="6" name="send" />
       </c-flex>
       <c-icon size="6" ml="auto" name="bookmark" />
     </c-flex>
     <c-box mx="4">
-      <chakra.p font-weight="bold">18 likes</chakra.p>
+      <c-text font-weight="bold">18 likes</c-text>
       <c-box mb="2">
-        <chakra.p font-size="sm">
+        <c-text font-size="sm">
           <chakra.span font-weight="bold" mr="2">{{ username }}</chakra.span> {{ caption }}
-        </chakra.p>
+        </c-text>
       </c-box>
-      <chakra.p
+      <c-text
         color="gray.500"
         text-transform="uppercase"
         mb="2"
         font-size="0.7em"
       >
         {{ date }}
-      </chakra.p>
+      </c-text>
     </c-box>
     <c-flex p="4" align="center" border-top="1px solid" border-color="gray.300" h="16">
       <c-icon name="smile" size="6" />
