@@ -32,15 +32,8 @@
 </template>
 
 <script lang="ts">
-import { CBox, CFlex, CIcon, CReset } from '@chakra-ui/vue-next'
 
 export default {
-  name: "INavbar",
-  components: {
-    CBox,
-    CFlex,
-    CIcon,
-    CReset
-  }
+  name: "INavbar"
 }
 </script>
