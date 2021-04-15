@@ -1,49 +1,52 @@
 <template>
-  <c-reset />
-  <!-- navbar -->
-  <INavbar />
-  <c-flex
-    as="main"
-    max-w="5xl"
-    w="full"
-    mx="auto"
-  >
+  <c-box font-family="body" bg="gray.50" min-h="100vh" pb="32">
+    <c-reset />
+    <!-- navbar -->
+    <INavbar />
     <c-flex
-      my="6"
-      direction="column"
-      align="stretch"
-      float="left" 
-      max-w="2xl"
+      as="main"
+      max-w="5xl"
       w="full"
-      :mr="[0, 0, 6]"
+      mx="auto"
     >
-      <!-- align="stretch" Items are stretched to fit the container -->
-      <IPost
-        v-for="(post, i) in posts"
-        :key="i"
-        :avatar="post.avatar"
-        :username="post.username"
-        :image="post.image"
-        :caption="post.caption"
-        :location="post.location"
-        :date="post.date"
-      />
+      <c-flex
+        my="6"
+        direction="column"
+        align="stretch"
+        float="left" 
+        max-w="2xl"
+        w="full"
+        :mr="[0, 0, 6]"
+      >
+        <!-- align="stretch" Items are stretched to fit the container -->
+        <IPost
+          v-for="(post, i) in posts"
+          :key="i"
+          :avatar="post.avatar"
+          :username="post.username"
+          :image="post.image"
+          :caption="post.caption"
+          :location="post.location"
+          :date="post.date"
+        />
+      </c-flex>
+      <ISidePanel />
     </c-flex>
-  </c-flex>
-  <!-- feed -->
-  <!-- sidebar -->
+  </c-box>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue'
 import INavbar from './components/INavbar.vue'
 import IPost from './components/IPost.vue'
+import ISidePanel from './components/ISidePanel.vue'
 
 export default defineComponent({
   name: 'App',
   components: {
     INavbar,
-    IPost
+    IPost,
+    ISidePanel
   },
   data () {
     return {
