@@ -22,7 +22,7 @@
       <!-- icons menu -->
       <c-flex>
         <c-icon name="home" size="1.5em" mr="3" />
-        <c-icon name="message-circle" size="1.5em" mr="3" />
+        <c-icon name="send" size="1.5em" mr="3" />
         <c-icon name="compass" size="1.5em" mr="3" />
         <c-icon name="heart" size="1.5em" mr="3" />
         <chakra.img src="/src/assets/avatar.jpg" h="1.5em" alt="avatar" rounded="full" />
