@@ -1,7 +1,7 @@
 <template>
   <c-stack spacing="2" position="sticky" h="fit-content" top="78px" my="6" w="xl" font-size="sm">
     <c-flex w="100%" align="center" my="4">
-      <chakra.img src="/src/assets/avatar.jpg" h="4rem" alt="avatar" rounded="full" mr="3" />
+      <chakra.img src="https://pbs.twimg.com/profile_images/1306495804903915520/9FAg0JSJ_400x400.jpg" h="4rem" alt="avatar" rounded="full" mr="3" />
       <c-box flex="1">
         <c-text font-weight="bold">SybrenW</c-text>
         <c-text color="gray.500">Sybren Willemot</c-text>
